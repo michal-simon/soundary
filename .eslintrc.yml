@@ -1,0 +1,11 @@
+env:
+  es6: true
+  node: true
+  mocha: true
+  browser: true
+extends: [ 'eslint:recommended' ]
+parserOptions:
+  ecmaVersion: 6
+  sourceType: "module"
+  ecmaFeatures:
+    classes: true
