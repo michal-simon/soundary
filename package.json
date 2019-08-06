@@ -1,33 +1,39 @@
 {
   "name": "soundary",
-  "version": "0.1.0",
-  "description": "Soud visualizer",
+  "version": "0.2.0",
+  "description": "Sound visualizer",
   "author": "Michal Šimon",
   "keywords": [
-    "Closure",
-    "CoffeeScript",
-    "Compiler",
-    "Google"
+    "ES6"
   ],
   "private": true,
   "devDependencies": {
-    "coffee-script": "^1.8.0",
-    "gulp": "^3.8.10",
-    "gulp-closure-compiler": "^0.2.7",
-    "gulp-coffee": "^2.2.0",
-    "gulp-coffee2closure": "^0.1.2",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cssnano": "^2.1.3",
     "gulp-livereload": "^2.1.1",
-    "gulp-minify-html": "^0.1.6",
-    "gulp-sass": "^1.1.0",
-    "gulp-sourcemaps": "^1.2.8",
-    "gulp-util": "^3.0.1",
-    "run-sequence": "^1.0.1"
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-webserver": "^0.9.1",
+    "run-sequence": "^2.2.1",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^3.6.0",
+    "webpack-stream": "^4.0.0"
   },
   "scripts": {
-    "start": "node app/server",
-    "test": "gulp build --production"
+    "start": "gulp"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "^8.10.0"
   }
 }
