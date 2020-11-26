@@ -23,5 +23,8 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: DX Scanner Action
-        uses: DXHeroes/dx-scanner@v1
+      #- name: DX Scanner Action
+      #  uses: DXHeroes/dx-scanner@v1
+      
+      - name: Reshift
+        run: npx @reshiftsecurity/reshift-plugin-npm
