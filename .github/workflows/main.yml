@@ -27,4 +27,6 @@ jobs:
       #  uses: DXHeroes/dx-scanner@v1
       
       - name: Reshift
-        run: npx @reshiftsecurity/reshift-plugin-npm
+        env:
+          RESHIFT_TOKEN: ${{ secrets.RESHIFT_TOKEN }}
+        run: npx @reshiftsecurity/reshift-plugin-npm reshift-scan -t ${RESHIFT_TOKEN}
