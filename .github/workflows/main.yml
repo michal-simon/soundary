@@ -29,4 +29,4 @@ jobs:
       - name: Reshift
         env:
           RESHIFT_TOKEN: ${{ secrets.RESHIFT_TOKEN }}
-        run: npx @reshiftsecurity/reshift-plugin-npm -t ${RESHIFT_TOKEN} -p .
+        run: npx @reshiftsecurity/reshift-plugin-npm -t ${RESHIFT_TOKEN} -l debug
