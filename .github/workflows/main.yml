@@ -23,7 +23,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           DXSCANNER_API_TOKEN: ${{ secrets.DXSCANNER_API_TOKEN }}
-        run: dx-scanner run --ci
+        run: dx-scanner run --ci --fail=off
       
       - name: Reshift
         env:
